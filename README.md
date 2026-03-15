@@ -1,122 +1,87 @@
-# 🚗 Vehicle Speed Detection System
+﻿<div align="center">
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Vehicle%20Speed%20Detection%20System&fontSize=32&fontColor=ffffff&animation=twinkling&fontAlignY=35"/>
+</div>
 
-<p align="center">
-  <img src="outputs/sample_detection.png" alt="Vehicle Speed Detection" width="800"/>
-</p>
+# Vehicle-Speed-Detection-System
 
-Real-time **Vehicle Speed Detection System** using **YOLO11 + Perspective Transform + ByteTrack**. This project accurately estimates vehicle speeds by mapping the camera view to a top-down perspective.
-
----
-
-## 🎯 Results
-
-| Metric | Value |
-|--------|-------|
-| **Speed Accuracy** | ±5 km/h |
-| **Detection FPS** | 30+ |
-| **Vehicle Types** | Cars, Trucks, Buses |
-| **Multi-Object Tracking** | ✓ ByteTrack |
-| **Perspective Correction** | ✓ |
-
-### How It Works
-
-1. **Object Detection**: YOLO11 detects all vehicles in frame
-2. **Perspective Transform**: Camera view mapped to bird's-eye view
-3. **Object Tracking**: ByteTrack assigns unique IDs
-4. **Speed Calculation**: Distance/time between frames → speed in km/h
-
-### Speed Color Coding
-- 🟢 **Green Box**: Normal speed (< 50 km/h)
-- 🔴 **Red Box**: Over-speeding (> 100 km/h)
+Real-time vehicle speed detection system using YOLO11 with perspective transform for accurate speed estimation.
 
 ---
 
-## ✨ Features
+## Project Status: âœ… COMPLETE & READY FOR DEPLOYMENT
 
-- **Real-time Speed Estimation**: Accurate vehicle speed calculation
-- **Perspective Transform**: Corrects camera distortion for accurate measurements
-- **Multi-Vehicle Tracking**: Track multiple vehicles simultaneously with ByteTrack
-- **Color-coded Alerts**: Visual speed violation indicators
-- **Video Output**: Generates annotated video with speed labels
-
-### 🎥 Output Video
-
-The processed output video with speed annotations is available at:
-- `outputs/yolo_output/vehicles1280x720.avi` (15 MB)
+![GitHub stars](https://img.shields.io/github/stars/Abdul-Insighht/=social)
+![GitHub forks](https://img.shields.io/github/forks/Abdul-Insighht/=social)
 
 ---
 
-## 🛠️ Tech Stack
+## ðŸ› ï¸ Tech Stack
 
-| Category | Technology |
-|----------|------------|
-| **Object Detection** | YOLO11 (Ultralytics) |
-| **Tracking** | ByteTrack |
-| **Computer Vision** | OpenCV |
-| **Annotation** | Supervision |
-| **Deep Learning** | PyTorch |
-| **Environment** | Python 3.12, Conda |
+```
+Python, YOLO11, OpenCV, NumPy, Ultralytics
+```
 
 ---
 
-## 🚀 Installation
+## ðŸš€ Getting Started
 
+1. **Clone the repository**
 ```bash
-# Clone the repository
 git clone https://github.com/Abdul-Insighht/Vehicle-Speed-Detection-System.git
 cd Vehicle-Speed-Detection-System
-
-# Create conda environment
-conda create -n cv python=3.12 -y
-conda activate cv
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Or install manually
-pip install numpy pandas opencv-python ultralytics supervision
 ```
 
-## 📝 Usage
-
+2. **Install dependencies**
 ```bash
-# Run speed detection on video
-python main.py --video path/to/traffic_video.mp4
+pip install -r requirements.txt
+```
 
-# Run the app
-python app.py
+3. **Run the project**
+```bash
+python main.py
 ```
 
 ---
 
-## 📚 Resources
+## â­ Quick Links
 
-- **YOLO**: [Ultralytics](https://github.com/ultralytics/ultralytics)
-- **Roboflow**: [GitHub](https://github.com/roboflow)
-- **Supervision**: [Docs](https://supervision.roboflow.com/latest/)
+â­ [Star this repo](https://github.com/Abdul-Insighht/Vehicle-Speed-Detection-System) â€¢ ðŸ› [Report Bug](https://github.com/Abdul-Insighht/Vehicle-Speed-Detection-System/issues) â€¢ ðŸ’¡ [Request Feature](https://github.com/Abdul-Insighht/Vehicle-Speed-Detection-System/issues)
 
 ---
 
-## 📬 Contact
-
-**Hafiz Abdul Rehman**
-
-- 📧 Email: hafizrehman3321@gmail.com
-- 💼 LinkedIn: [Hafiz Abdul Rehman](https://linkedin.com/in/hafiz-abdul-rehman-9990ab329)
-- 🐙 GitHub: [Abdul-Insighht](https://github.com/Abdul-Insighht)
+Made with â¤ï¸ using Python & AI Technologies â€” Demonstration by **Abdul-Insighht** - Data Science Specialist | AI Agent & Agentic AI Developer
 
 ---
 
-## 🌟 Show Your Support
+## ðŸ‘¤ Author
 
-If you find this project helpful, please consider:
+<table>
+<tr>
+<td>
 
-- ⭐ **Starring** this repository
-- 🔄 **Sharing** with others
-- 🐛 **Reporting** issues
-- 💡 **Suggesting** improvements
+**Hafiz Abdul Rehman**  
+[Abdul-Insighht](https://github.com/Abdul-Insighht) Â· he/him  
+**Data Science Specialist | AI Agent & Agentic AI Developer**
+
+[![GitHub](https://img.shields.io/badge/GitHub-Abdul--Insighht-181717?style=flat-square&logo=github)](https://github.com/Abdul-Insighht)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/hafiz-abdul-rehman-9990ab329/)
+
+</td>
+</tr>
+</table>
 
 ---
 
-<p align="center">Made with ❤️ by <b>Hafiz Abdul Rehman</b></p>
-<p align="center">🚗💨 Automating vehicle identification with AI and computer vision</p>
+## ðŸ“„ License
+
+This project is licensed under the **MIT License**.
+
+---
+
+<div align="center">
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer"/>
+</div>
+
+<div align="center">
+  <sub>â­ï¸ From <a href="https://github.com/Abdul-Insighht">Abdul-Insighht</a> â€” Passionate about AI, ML, and solving real-world problems</sub>
+</div>
